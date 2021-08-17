@@ -19,7 +19,7 @@ public class ReqResTests {
                 .get("https://reqres.in/api/users/2")
                 .then()
                 .log().all()
-                .statusCode(200)
+                .statusCode(300)
 
                 //resultado del response date, id = 2
                 .body("data.id", equalTo(2));
